@@ -81,6 +81,7 @@ Los objetivos de esta tabla son resúmenes. Las descripciones detalladas quedan 
 | UC-40 | Crear receta | Crear receta | Principal: Nutricionista |
 | UC-41 | Modificar receta | Modificar receta | Principal: Nutricionista |
 | UC-42 | Publicar receta | Publicar receta | Principal: Nutricionista |
+
 UC-03 se representa como una subfunción de apoyo. Tener una sesión válida es una condición previa de las funciones protegidas. Esto no implica ejecutar UC-03 cada vez que se realiza una de ellas.
 
 UC-04 requiere una cuenta, pero no una sesión iniciada. UC-02 representa la acción de verificar el correo; recibir el mensaje de UC-11 no equivale a verificarlo.
