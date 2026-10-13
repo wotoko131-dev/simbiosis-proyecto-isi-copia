@@ -74,7 +74,13 @@ Los objetivos de esta tabla son resúmenes. Las descripciones detalladas quedan 
 | UC-33 | Eliminar cuenta de usuario | Eliminar una cuenta de usuario y conservar el contenido publicado cuando corresponda a un cuidador. | Principal: Coordinador. |
 | UC-34 | Consultar listado de cuentas de usuario | Consultar las cuentas y su información básica: nombre, correo, rol y estado. | Principal: Coordinador. |
 | UC-35 | Registrar acción en el historial de auditoría | Registrar la fecha, la hora y la acción realizada al aprobar, suspender o eliminar una cuenta. | Sin participación directa de un actor. Comportamiento incluido en UC-31, UC-32 y UC-33. |
-
+| UC-36 | Consultar historial | Consultar los datos propios y filtrarlos o verlos en una gráfica | Principal: Paciente |
+| UC-37 | Conceder permiso de consulta de datos | Permitir al paciente elegir quienes puedan acceder a su información | Principal: Paciente |
+| UC-38 | Consultar datos de salud | Consultar los datos de un paciente | Principal: Cuidador |
+| UC-39 | Buscar recetas | Buscar recetas combinando criterios de palabras clave, ingredientes, autor y filtros de tipo de comida, tiempo, dificultad y restricciones dietéticas . | Sin participación directa de un actor |
+| UC-40 | Crear receta | Crear receta | Principal: Nutricionista |
+| UC-41 | Modificar receta | Modificar receta | Principal: Nutricionista |
+| UC-42 | Publicar receta | Publicar receta | Principal: Nutricionista |
 UC-03 se representa como una subfunción de apoyo. Tener una sesión válida es una condición previa de las funciones protegidas. Esto no implica ejecutar UC-03 cada vez que se realiza una de ellas.
 
 UC-04 requiere una cuenta, pero no una sesión iniciada. UC-02 representa la acción de verificar el correo; recibir el mensaje de UC-11 no equivale a verificarlo.
