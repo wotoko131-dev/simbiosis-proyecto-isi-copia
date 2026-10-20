@@ -286,6 +286,7 @@ Los apartados 6.1 y 6.2 corresponden a las descripciones detalladas de UC-05 y U
 **Inicio:** El Usuario registrado tiene intención de buscar una receta
 
 **Escenario principal de éxito:**
+
 1-El usuario solicita buscar en la lista de recetas
 
 2-El usuario incluye los criterios que desee, al menos uno
@@ -315,7 +316,9 @@ Los apartados 6.1 y 6.2 corresponden a las descripciones detalladas de UC-05 y U
 4a El sistema no encuentra recetas con esos criterios
 
   -Si el sistema detecta fallos ortográficos, mostrar sugerencia de corrección. Mantener los criterios hasta validación de cambio del usuario
+  
   -Si el sistema detecta alternativas en los criterios, mostrar sugerencia de cambio. Mantener los criterios hasta validación de cambio del usuario
+  
   -Si no hay sugerencias, mostrar que no hay resultados. Mantener los criterios
 
 4b Hubo un error durante la busqueda
