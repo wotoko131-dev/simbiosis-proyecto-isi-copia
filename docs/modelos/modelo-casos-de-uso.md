@@ -234,48 +234,97 @@ Los apartados 6.1 y 6.2 corresponden a las descripciones detalladas de UC-05 y U
 **Inicio:** El Usuario registrado tiene intencion de actualizar su perfil.
 
 **Escenario principal de éxito:** 
+
 1- El usuario solicita actualizar su perfil
+
 2-El sistema muestra datos de consulta
+
 3-El usuario modifica los datos editables que desee
+
 4-El usuario solicita guardar los cambios
+
 5-El sistema comprueba que los datos se han introducido correctamente
+
 6-El sistema guarda los datos
+
 7-El sistema confirma la modificacion del perfil
+
 8-Fin del caso de uso
 
 **Extensiones (flujos alternativos):** 
+
 *a El usuario cancela la edición en cualquier momento
+
   -Descartar los cambios sin guardar
+  
 5a Falta un dato obligatorio o hay datos no válidos
+
   -Comunicar el problema
+  
   -El usuario cambia los datos inviables
+  
   -El usuario solicita el guardado de nuevo
+  
 
 **Postcondiciones:** Guardar todos los datos tras confirmación del usuario y confirmar la modificacion. Si el usuario cancela el guardado, descartar todos los cambios no guardados. Si falla el guardado, comunicar el problema y mantener los cambios hasta que el usuario cancele el guardado o solicite guardar de nuevo. Los datos no modificables no cambian
 
-**Reglas y NFR pertinentes:**  	NFR-010
+**Reglas y NFR pertinentes:** 	UR-03; FR-019 	NFR-010
 
 **Preguntas abiertas:** [Registra solo las cuestiones necesarias que las fuentes no resuelvan. Si no hay preguntas para el alcance descrito, indícalo.]
+
 
 ### 6.2 Descripción detallada UC-21 — Buscar recetas
 
 **Identificador y nombre del caso de uso:**  UC-21 — Buscar recetas
 
-**Objetivo:** [Explica qué resultado pretende obtener el participante.]
+**Objetivo:**  Localizar una receta que cumpla criterios y consultar su detalle.
 
-**Participantes:** Usuario registrado, analista
+**Participantes:** Usuario registrado
 
-**Precondiciones:** [Indica qué se da por cumplido al comenzar. Las comprobaciones que realiza el sistema pertenecen al flujo.]
+**Precondiciones:** El Usuario registrado tiene una cuenta activa. El Usuario Registrado tiene una sesión iniciada.
 
-**Inicio:** [Indica qué acción o suceso inicia el caso.]
+**Inicio:** El Usuario registrado tiene intención de buscar una receta
 
-**Escenario principal de éxito:** [Describe la secuencia entre los participantes y el sistema.]
+**Escenario principal de éxito:**
+1-El usuario solicita buscar en la lista de recetas
 
-**Extensiones (flujos alternativos):** [Vincula cada variación a un paso. Indica cómo continúa o termina.]
+2-El usuario incluye los criterios que desee, al menos uno
 
-**Postcondiciones:** [Indica qué queda establecido con éxito y qué se conserva o cambia si el caso termina sin éxito o se cancela. Una consulta no requiere modificar datos para alcanzar su objetivo.]
+3-El sistema comprueba los criterios
 
-**Reglas y NFR pertinentes:** [Remite a los requisitos y actas que condicionan el comportamiento.]
+4-El sistema muestra las recetas publicadas y validadas que cumplan todos los criterios, las mas recientes primero
+
+5-El usuario selecciona y entra en detalle de las recetas que desee. El usuario puede salir de la receta seleccionada
+
+6-El usuario puede volver a hacer una busqueda con otros o los mismos criterios
+
+7-El usuario termina la consulta
+
+8-Fin del caso de uso
+
+**Extensiones (flujos alternativos):** 
+
+3a El usuario no puso ningún criterio
+
+  -El sistema no ejecuta la busqueda y pide un criterio
+
+3b Los criterios son contradictorios
+
+  -El sistema no ejecuta la busqueda y pide la modificacion de los criterios inviables
+
+4a El sistema no encuentra recetas con esos criterios
+
+  -Si el sistema detecta fallos ortográficos, mostrar sugerencia de corrección. Mantener los criterios hasta validación de cambio del usuario
+  -Si el sistema detecta alternativas en los criterios, mostrar sugerencia de cambio. Mantener los criterios hasta validación de cambio del usuario
+  -Si no hay sugerencias, mostrar que no hay resultados. Mantener los criterios
+
+4b Hubo un error durante la busqueda
+
+  -Informar del error. Mantener los criterios
+  
+**Postcondiciones:** 
+
+**Reglas y NFR pertinentes:** UR-08; FR-085 a FR-096, FR-099, FR-103 y FR-119  NFR-004, NFR-005 y NFR-010
 
 **Preguntas abiertas:** [Registra solo las cuestiones necesarias que las fuentes no resuelvan. Si no hay preguntas para el alcance descrito, indícalo.]
 
