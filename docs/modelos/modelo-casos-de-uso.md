@@ -223,33 +223,47 @@ Los apartados 6.1 y 6.2 corresponden a las descripciones detalladas de UC-05 y U
 
 ### 6.1 Descripción detallada UC-05 — Actualizar perfil
 
-**Identificador y nombre del caso de uso:** [Indica el caso.]
+**Identificador y nombre del caso de uso:** UC-05, Actualizar Perfil
 
-**Objetivo:** [Explica qué resultado pretende obtener el participante.]
+**Objetivo:** Actualizar perfil propio y conservar los cambios
 
-**Participantes:** [Indica el actor principal y los actores de apoyo, si los hay.]
+**Participantes:** Usuario registrado
 
-**Precondiciones:** [Indica qué se da por cumplido al comenzar. Las comprobaciones que realiza el sistema pertenecen al flujo.]
+**Precondiciones:** El Usuario registrado tiene una cuenta activa. El Usuario Registrado tiene una sesión iniciada.
 
-**Inicio:** [Indica qué acción o suceso inicia el caso.]
+**Inicio:** El Usuario registrado tiene intencion de actualizar su perfil.
 
-**Escenario principal de éxito:** [Describe la secuencia entre los participantes y el sistema.]
+**Escenario principal de éxito:** 
+1- El usuario solicita actualizar su perfil
+2-El sistema muestra datos de consulta
+3-El usuario modifica los datos editables que desee
+4-El usuario solicita guardar los cambios
+5-El sistema comprueba que los datos se han introducido correctamente
+6-El sistema guarda los datos
+7-El sistema confirma la modificacion del perfil
+8-Fin del caso de uso
 
-**Extensiones (flujos alternativos):** [Vincula cada variación a un paso. Indica cómo continúa o termina.]
+**Extensiones (flujos alternativos):** 
+*a El usuario cancela la edición en cualquier momento
+  -Descartar los cambios sin guardar
+5a Falta un dato obligatorio o hay datos no válidos
+  -Comunicar el problema
+  -El usuario cambia los datos inviables
+  -El usuario solicita el guardado de nuevo
 
-**Postcondiciones:** [Indica qué queda establecido con éxito y qué se conserva o cambia si el caso termina sin éxito o se cancela. Una consulta no requiere modificar datos para alcanzar su objetivo.]
+**Postcondiciones:** Guardar todos los datos tras confirmación del usuario y confirmar la modificacion. Si el usuario cancela el guardado, descartar todos los cambios no guardados. Si falla el guardado, comunicar el problema y mantener los cambios hasta que el usuario cancele el guardado o solicite guardar de nuevo. Los datos no modificables no cambian
 
-**Reglas y NFR pertinentes:** [Remite a los requisitos y actas que condicionan el comportamiento.]
+**Reglas y NFR pertinentes:**  	NFR-010
 
 **Preguntas abiertas:** [Registra solo las cuestiones necesarias que las fuentes no resuelvan. Si no hay preguntas para el alcance descrito, indícalo.]
 
 ### 6.2 Descripción detallada UC-21 — Buscar recetas
 
-**Identificador y nombre del caso de uso:** [Indica el caso.]
+**Identificador y nombre del caso de uso:**  UC-21 — Buscar recetas
 
 **Objetivo:** [Explica qué resultado pretende obtener el participante.]
 
-**Participantes:** [Indica el actor principal y los actores de apoyo, si los hay.]
+**Participantes:** Usuario registrado, analista
 
 **Precondiciones:** [Indica qué se da por cumplido al comenzar. Las comprobaciones que realiza el sistema pertenecen al flujo.]
 
