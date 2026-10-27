@@ -48,7 +48,7 @@ Como usuario, quiero usar los ingredientes incluidos como criterio de búsqueda,
 ### Criterios de aceptación
 
 - **CA-01.** Dada una receta que incluya un ingrediente en concreto, cuando use la búsqueda, entonces esa receta aparecerá en los resultados.
-- **CA-02.** Dado un ingrediente que se desea quitar de la búsqueda, cuando se use la busqueda por ingredientes, entonces el usuario puede seleccionarlo de nuevo para quitarlo del criterio de búsqueda.
+- **CA-02.** Dados varios ingredientes usados como criterio de inclusion, cuando se use la busqueda, los resultados contendrán todos los ingredientes usados como criterio.
 - **CA-03.** Dado que un ingrediente aparece a la vez como criterio de inclusión y de exclusión, cuando el usuario busque, entonces se informa al usuario de que debe cambiarlo antes de hacer una búsqueda.
 
 ## US-03
