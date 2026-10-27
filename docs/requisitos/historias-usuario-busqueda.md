@@ -3,7 +3,7 @@
 | Campo | Valor |
 | --- | --- |
 | Proyecto | Proyecto Simbiosis |
-| Fecha | [dd/mm/aaaa] |
+| Fecha | 27/10/2026 |
 | Versión | [Versión de trabajo] |
 | Estado | Borrador |
 
@@ -15,7 +15,7 @@
 
 ## Épica de búsqueda
 
-Como [rol], quiero [capacidad amplia], para [beneficio].
+Como usuario, quiero poder hacer una busqueda, para encontrar recetas.
 
 **Estado:** descompuesta en US-01, US-02 y US-03. Conserva la necesidad conjunta.
 
@@ -25,45 +25,45 @@ Como [rol], quiero [capacidad amplia], para [beneficio].
 
 ## US-01
 
-**Título:** [Capacidad]
+**Título:** Buscar por una palabra o frase
 
-Como [rol], quiero [capacidad], para [beneficio].
+Como usuario, quiero buscar usando palabras o frases, para encontrar una receta en concreto.
 
 **Fuentes:** UR-08; UC-21; [FR principal]; acta, [apartado pertinente].
 
 ### Criterios de aceptación
 
-- **CA-01.** Dado [situación], cuando [acción], entonces [resultado observable].
-- **CA-02.** Dado [situación], cuando [acción], entonces [resultado observable].
-- **CA-03.** Dado [situación], cuando [acción], entonces [resultado observable].
+- **CA-01.** Dado que una receta tenga la clave en su nombre o descripción, cuando busque usando una clave, entonces el sistema mostrará esa receta en los resultados.
+- **CA-02.** Dado que se usen otros filtros, cuando buscamos por frases o palabras, entonces los resultados cumplirán ambos tipos de busqueda.
+- **CA-03.** Dado que el sistema detecte un error como una falta ortográfica, cuando buscamos por texto, entonces el sistema muestra sugerencias de corrección, de haberlas.
 
 ## US-02
 
-**Título:** [Capacidad]
+**Título:** Buscar por ingredientes incluidos
 
-Como [rol], quiero [capacidad], para [beneficio].
+Como usuario, quiero usar los ingredientes incluidos como criterio de búsqueda, para encontrar recetas concretas.
 
 **Fuentes:** UR-08; UC-21; [FR principal]; acta, [apartado pertinente].
 
 ### Criterios de aceptación
 
-- **CA-01.** Dado [situación], cuando [acción], entonces [resultado observable].
-- **CA-02.** Dado [situación], cuando [acción], entonces [resultado observable].
-- **CA-03.** Dado [situación], cuando [acción], entonces [resultado observable].
+- **CA-01.** Dada una receta que incluya un ingrediente en concreto, cuando use la búsqueda, entonces esa receta aparecerá en los resultados.
+- **CA-02.** Dado un ingrediente que se desea quitar de la búsqueda, cuando se use la busqueda por ingredientes, entonces el usuario puede seleccionarlo de nuevo para quitarlo del criterio de búsqueda.
+- **CA-03.** Dado que un ingrediente aparece a la vez como criterio de inclusión y de exclusión, cuando el usuario busque, entonces se informa al usuario de que debe cambiarlo antes de hacer una búsqueda.
 
 ## US-03
 
-**Título:** [Capacidad]
+**Título:** Buscar por ingredientes excluidos
 
-Como [rol], quiero [capacidad], para [beneficio].
+Como usuario, quiero usar ingredientes como criterio de exclusion, para evitar recetas que tengan ese ingrediente.
 
 **Fuentes:** UR-08; UC-21; [FR principal]; acta, [apartado pertinente].
 
 ### Criterios de aceptación
 
-- **CA-01.** Dado [situación], cuando [acción], entonces [resultado observable].
-- **CA-02.** Dado [situación], cuando [acción], entonces [resultado observable].
-- **CA-03.** Dado [situación], cuando [acción], entonces [resultado observable].
+- **CA-01.** Dada una receta que contenga un ingrediente concreto, cuando se use, entonces esa receta no estará en los resultados.
+- **CA-02.** Dados varios ingredientes excluidos, cuando se busquen recetas, entonces las recetas resultantes no tendrán ninguno de ellos.
+- **CA-03.** Dado que el usuario acepte sugerencias, cuando su búsqueda no se ha encontrado, entonces los resultados seguirán conservando las exclusiones.
 
 ## Revisión INVEST
 
