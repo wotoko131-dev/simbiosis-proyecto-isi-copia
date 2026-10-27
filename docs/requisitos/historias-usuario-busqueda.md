@@ -71,13 +71,13 @@ La revisión abarca US-01, US-02 y US-03. «Aplicado» indica si se ha realizado
 
 | Criterio | Pregunta de revisión | Aplicado | Cumple | Justificación |
 | --- | --- | --- | --- | --- |
-| Independiente | ¿Puede implementarse cada historia y ofrecer un resultado útil sin implementar antes las otras historias del conjunto? Puede compartir infraestructura con ellas. | Si | Si | [Historias y motivo] |
-| Negociable | ¿Cada historia explica qué necesita la persona y deja margen para discutir los detalles de la solución, respetando los acuerdos confirmados? | Si  | Si  | [Historias y motivo] |
-| Valiosa | ¿La parte «para…» de cada historia explica el beneficio que obtiene la persona al usar esa capacidad? | Si  | Si  | [Historias y motivo] |
-| Estimable | ¿Están claros el alcance y los datos necesarios para estimar el trabajo de cada historia? | Si  | Si  | [Historias y motivo] |
-| Pequeña | ¿Se centra cada historia en una única capacidad de alcance manejable? | Si  | Si  | [Historias y motivo] |
-| Comprobable | ¿Los criterios de aceptación de cada historia describen acciones y resultados observables que permiten distinguir un comportamiento correcto de uno incorrecto? | Si  | Si  | [Historias y motivo] |
+| Independiente | ¿Puede implementarse cada historia y ofrecer un resultado útil sin implementar antes las otras historias del conjunto? Puede compartir infraestructura con ellas. | Si | Si |  |
+| Negociable | ¿Cada historia explica qué necesita la persona y deja margen para discutir los detalles de la solución, respetando los acuerdos confirmados? | Si  | Si  |  |
+| Valiosa | ¿La parte «para…» de cada historia explica el beneficio que obtiene la persona al usar esa capacidad? | Si  | Si  | |
+| Estimable | ¿Están claros el alcance y los datos necesarios para estimar el trabajo de cada historia? | Si  | Si  |  |
+| Pequeña | ¿Se centra cada historia en una única capacidad de alcance manejable? | Si  | Si  | |
+| Comprobable | ¿Los criterios de aceptación de cada historia describen acciones y resultados observables que permiten distinguir un comportamiento correcto de uno incorrecto? | Si  | Si  |  |
 
 ## Dudas pendientes
 
-[Cuestiones pendientes de aclaración. Si no quedan cuestiones, indicar «Ninguna».]
+Ninguna
