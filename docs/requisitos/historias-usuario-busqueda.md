@@ -15,7 +15,7 @@
 
 ## Épica de búsqueda
 
-Como usuario, quiero poder hacer una busqueda, para encontrar recetas.
+Como usuario verificado, quiero poder hacer una busqueda, para encontrar recetas.
 
 **Estado:** descompuesta en US-01, US-02 y US-03. Conserva la necesidad conjunta.
 
@@ -27,35 +27,35 @@ La búsqueda se puede hacer mediante diferentes filtros y opciones. Por ello, la
 
 **Título:** Buscar por una palabra o frase
 
-Como usuario, quiero buscar usando palabras o frases, para encontrar una receta en concreto.
+Como usuario verificado, quiero buscar usando palabras o frases, para encontrar una receta en concreto.
 
 **Fuentes:** UR-08; UC-21; FR-085; acta, 2. Acuerdos.
 
 ### Criterios de aceptación
 
-- **CA-01.** Dado que una receta tenga la clave en su nombre o descripción, cuando busque usando una clave, entonces el sistema mostrará esa receta en los resultados.
-- **CA-02.** Dado que se usen otros filtros, cuando buscamos por frases o palabras, entonces los resultados cumplirán ambos tipos de busqueda.
-- **CA-03.** Dado que el sistema detecte un error como una falta ortográfica, cuando buscamos por texto, entonces el sistema muestra sugerencias de corrección, de haberlas.
+- **CA-01.** Dada una receta que tenga texto coincidente con el criterio en su nombre o descripción, cuando busque usando palabras o frases como criterio, entonces el sistema mostrará esa receta en los resultados.
+- **CA-02.** Dados otros criterios de búsqueda simultáneos, cuando se busca por frases o palabras, entonces el sistema mostrará recetas que cumplan todos los criterios a la vez.
+- **CA-03.** Dado un error detectado como fallo ortográfico en un texto que lo admita, cuando se busca por palabras o frases, entonces el sistema muestra sugerencias para corregir el error.
 
 ## US-02
 
 **Título:** Buscar por ingredientes incluidos
 
-Como usuario, quiero usar los ingredientes incluidos como criterio de búsqueda, para encontrar recetas concretas.
+Como usuario verificado, quiero usar los ingredientes incluidos como criterio de búsqueda, para encontrar recetas concretas.
 
 **Fuentes:** UR-08; UC-21; FR-086; acta, 2. Acuerdos.
 
 ### Criterios de aceptación
 
-- **CA-01.** Dada una receta que incluya un ingrediente en concreto, cuando use la búsqueda, entonces esa receta aparecerá en los resultados.
-- **CA-02.** Dados varios ingredientes usados como criterio de inclusion, cuando se use la busqueda, los resultados contendrán todos los ingredientes usados como criterio.
-- **CA-03.** Dado que un ingrediente aparece a la vez como criterio de inclusión y de exclusión, cuando el usuario busque, entonces se informa al usuario de que debe cambiarlo antes de hacer una búsqueda.
+- **CA-01.** Dada una receta con un ingrediente en concreto, cuando se use ese ingrediente como criterio de inclusion, entonces esa receta aparecerá en los resultados.
+- **CA-02.** Dados varios ingredientes usados como criterio de inclusión, cuando se use la búsqueda, entonces los resultados contendrán todos los ingredientes usados como criterio.
+- **CA-03.** Dado un ingrediente usado a la vez como criterio de inclusión y de exclusión, cuando se utilice la búsqueda, entonces se informa al usuario de que debe corregir, denegando la búsqueda.
 
 ## US-03
 
 **Título:** Buscar por ingredientes excluidos
 
-Como usuario, quiero usar ingredientes como criterio de exclusion, para evitar recetas que tengan ese ingrediente.
+Como usuario verificado, quiero usar ingredientes como criterio de exclusion, para evitar recetas que tengan ese ingrediente.
 
 **Fuentes:** UR-08; UC-21; FR-087; acta, 2. Acuerdos.
 
