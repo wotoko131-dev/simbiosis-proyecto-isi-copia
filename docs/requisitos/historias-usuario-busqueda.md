@@ -21,7 +21,7 @@ Como usuario, quiero poder hacer una busqueda, para encontrar recetas.
 
 ## Justificación de la división
 
-[Justificación de los resultados útiles que separa la división.]
+La búsqueda se puede hacer mediante diferentes filtros y opciones. Por ello, la división se basa en los diferentes criterios posibles para la búsqueda
 
 ## US-01
 
@@ -29,7 +29,7 @@ Como usuario, quiero poder hacer una busqueda, para encontrar recetas.
 
 Como usuario, quiero buscar usando palabras o frases, para encontrar una receta en concreto.
 
-**Fuentes:** UR-08; UC-21; [FR principal]; acta, [apartado pertinente].
+**Fuentes:** UR-08; UC-21; FR-085; acta, 2. Acuerdos.
 
 ### Criterios de aceptación
 
@@ -43,7 +43,7 @@ Como usuario, quiero buscar usando palabras o frases, para encontrar una receta 
 
 Como usuario, quiero usar los ingredientes incluidos como criterio de búsqueda, para encontrar recetas concretas.
 
-**Fuentes:** UR-08; UC-21; [FR principal]; acta, [apartado pertinente].
+**Fuentes:** UR-08; UC-21; FR-086; acta, 2. Acuerdos.
 
 ### Criterios de aceptación
 
@@ -57,7 +57,7 @@ Como usuario, quiero usar los ingredientes incluidos como criterio de búsqueda,
 
 Como usuario, quiero usar ingredientes como criterio de exclusion, para evitar recetas que tengan ese ingrediente.
 
-**Fuentes:** UR-08; UC-21; [FR principal]; acta, [apartado pertinente].
+**Fuentes:** UR-08; UC-21; FR-087; acta, 2. Acuerdos.
 
 ### Criterios de aceptación
 
