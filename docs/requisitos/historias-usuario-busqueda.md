@@ -6,7 +6,7 @@
 | Fecha | 27/10/2026 |
 | Versión | 0.1 |
 | Estado | Borrador |
-
+No ia
 ## Fuentes comunes
 
 - [Acta de UC-21 Buscar recetas](../captura/acta-acuerdos-uc-21-buscar-recetas.md), v1.1, Vigente.
