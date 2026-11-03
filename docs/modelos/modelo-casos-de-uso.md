@@ -331,6 +331,8 @@ Los apartados 6.1 y 6.2 corresponden a las descripciones detalladas de UC-05 y U
 
 **Preguntas abiertas:** [Registra solo las cuestiones necesarias que las fuentes no resuelvan. Si no hay preguntas para el alcance descrito, indícalo.]
 
+![Diagrama de actividad de UC-21 · Buscar recetas](imagenes/actividad-buscar-recetas-uc21.png)
+
 ## 7 Continuidad entre iteraciones
 
 E1 estableció la primera vista del modelo. Su estado revisado se conserva en el commit público `984a17f`, con los casos UC-01 a UC-07, UC-09 a UC-11 y UC-31 a UC-35.
